@@ -1,4 +1,6 @@
-# AVR-Notlarim
+# AVR Notlarım
+
+## İsterseniz alt klöserdeki .md uzantılı dosyayı kullanabilirsiniz
 
 # IO-PORTS
 - [Datasheet] - Atmega328p
