@@ -280,6 +280,27 @@ void veri_gonder_uzun(char *data)
 		
 	}
 }
+void UART_veri_al_satır(char* buf, uint8_t n)
+{
+    uint8_t bufIdx = 0;
+    char c;
+
+  
+    do
+    {
+        
+        c = veri_al();
+
+        
+        buf[bufIdx++] = c;
+    }
+    while((bufIdx < n) && (c != '\r'));
+
+    
+    buf[bufIdx] = 0;
+}
 ```
+
+
 
 [herenkeskin.com]: <https://www.elprocus.com/differences-between-analog-signal-and-digital-signal/>
